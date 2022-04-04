@@ -1,10 +1,16 @@
+import java.util.Scanner;
 
 public class RadarR {
 public static void main(String[] args) {
-	double fCarro = 0.65;
+	Scanner ler = new Scanner(System.in);
 	double velCarro;
 	double multa;
-	int velEstrada = 120;
+	
+	System.out.println("Informe a frequencia do carro: ");
+	double fCarro = ler.nextDouble();
+	
+	System.out.println("Informe a velocidade máxima da estrada: ");
+	int velEstrada = ler.nextInt();
 	
 	velCarro = 300 * (1 / fCarro - 1);
 	
